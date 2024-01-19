@@ -24,7 +24,6 @@ public Laptop(int laptopId, String laptopBrandName, String laptopModelName, int 
 }
 public Laptop() {
 	super();
-	// TODO Auto-generated constructor stub
 }
 public int getLaptopId() {
 	return laptopId;
@@ -55,8 +54,5 @@ public String toString() {
 	return "Laptop [laptopId=" + laptopId + ", laptopBrandName=" + laptopBrandName + ", laptopModelName="
 			+ laptopModelName + ", laptopPrice=" + laptopPrice + "]";
 }
-
-
-
 
 }
