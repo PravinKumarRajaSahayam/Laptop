@@ -36,4 +36,16 @@ public class VMSController {
  	   dao.deleteById(laptopid);
 	return "Deleted";
     }
+	@GetMapping("/ViewAll")
+    public List<Laptop> getAllLaptop()
+    {
+ 	   Iterator<Laptop> it = dao.findAll().iterator();
+ 	   List<Laptop> list = new ArrayList<>();
+ 	   while(it.hasNext())
+ 	   {
+ 		   list.add(it.next());
+ 	   } 
+ 	   return list;
+    
+	}
 }
